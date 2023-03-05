@@ -6189,6 +6189,12 @@ div#mCSB_1_container{
   height: 100%;
 }
 
+.map-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 .callback-section .map-inner #contact-google-map{
   position: relative;
   width: 100%;
