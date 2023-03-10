@@ -109,6 +109,10 @@
     display: none;
   }
 
+  .header-middle {
+    padding-left: 0px;
+  }
+
   .header-middle .text {
     display: none;
   }
