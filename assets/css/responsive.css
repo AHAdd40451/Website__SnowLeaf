@@ -120,8 +120,24 @@
   }
 
   .header-middle .outer-container .logo-box .logo {
-    display: none;
+    /* display: none; */
     margin: 0 auto;
+    /* padding-left: 30px; */
+    /* display: flex; */
+    width: 7.1rem;
+    /* justify-content: center; */
+  }
+
+  .logoImg {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+    transition-property: all;
+    width: 88% !important;
+    image-rendering: pixelated;
   }
 
   .header-lower {
