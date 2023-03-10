@@ -24,6 +24,7 @@
     />
 
     <!-- Stylesheets -->
+    <script src="contact.js"></script>
     <link href="assets/css/font-awesome-all.css" rel="stylesheet" />
     <link href="assets/css/flaticon.css" rel="stylesheet" />
     <link href="assets/css/owl.css" rel="stylesheet" />
@@ -34,6 +35,16 @@
     <link href="assets/css/color.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("NZ4DNYekW6nkg15FX");
+      })();
+    </script>
   </head>
 
   <!-- page wrapper -->
@@ -386,56 +397,59 @@
                     </p>
                   </div>
                   <div class="form-inner">
-                    <form
-                      method="post"
-                      action="sendemail.php"
-                      id="contact-form"
-                      class="default-form"
-                    >
-                      <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <input
-                            type="text"
-                            name="username"
-                            placeholder="Your Name"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="Email Addres"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                          <input
-                            type="text"
-                            name="phone"
-                            required=""
-                            placeholder="Phone Number"
-                          />
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                          <textarea
-                            name="message"
-                            placeholder="Your Message..."
-                          ></textarea>
-                        </div>
-                        <div
-                          class="col-lg-12 col-md-12 col-sm-12 form-group message-btn"
-                        >
-                          <button
-                            class="theme-btn btn-two"
-                            type="submit"
-                            name="submit-form"
-                          >
-                            Submit Now<i class="flaticon-next"></i>
-                          </button>
-                        </div>
+                    <form   id="formId" onsubmit="sendMail();return false;">
+                    <div class="row clearfix">
+                      <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Your Name"
+                          required="true"
+                        />
                       </div>
-                    </form>
+                      <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email Addres"
+                          required="true"
+                        />
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <input
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          placeholder="Phone Number"
+                          required="true"
+                        />
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          placeholder="Your Message..."
+                          required="true"
+                        ></textarea>
+                      </div>
+                      <div
+                        class="col-lg-12 col-md-12 col-sm-12 form-group message-btn"
+                      >
+                        <button
+                          class="theme-btn btn-two"
+                          type="submit"
+                          value="submit"
+                          id="submit"
+                        >
+                          Submit Now<i class="flaticon-next"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                    <form>
+
                   </div>
                 </div>
               </div>
