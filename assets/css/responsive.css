@@ -109,7 +109,6 @@
     position: relative;
     width: 100%;
   }
-  
 
   .megamenu ul li:first-child {
     display: none;
@@ -132,9 +131,7 @@
   }
 
   .header-middle .outer-container .logo-box .logo {
-  
-    width: 17rem;
-
+    width: 15rem;
     margin-left: auto;
     margin-right: auto;
   }
