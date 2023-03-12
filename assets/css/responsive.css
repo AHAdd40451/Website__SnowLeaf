@@ -146,6 +146,7 @@
     transition-property: all;
     width: 100% !important;
     image-rendering: auto;
+    object-fit: cover;
   }
 
   .header-lower {
