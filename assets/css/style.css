@@ -1223,6 +1223,11 @@ img {
   color: #e94d4e !important;
 }
 
+.activeFor{
+  color: #e94d4e !important;
+
+}
+
 .main-menu .navigation > li > ul > li > a:hover:before {
   opacity: 1;
 }
@@ -4085,6 +4090,8 @@ div#mCSB_1_container {
 .footer-top .logo-widget .text {
   display: block;
   margin-bottom: 23px;
+  margin-top: 1rem;
+
 }
 
 .footer-top p,
@@ -4099,7 +4106,7 @@ div#mCSB_1_container {
 }
 
 .footer-top .logo-widget {
-  margin-top: 7px;
+  margin-top: 52px;
 }
 
 .footer-top .logo-widget .inner {
