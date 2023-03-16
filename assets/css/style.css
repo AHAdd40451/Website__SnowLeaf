@@ -1605,6 +1605,7 @@ img {
   transition: all 500ms ease;
 }
 
+
 .mobile-menu .navigation li.current > a:before {
   height: 100%;
 }
