@@ -658,6 +658,7 @@ img {
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
+  background-color: #142b3c !important;
 }
 
 .sticky-header {
@@ -879,11 +880,11 @@ img {
 
 .header-middle .outer-container .logo-box {
   position: absolute;
-  width: 15rem;
-  height: 12rem;
-  left: -2rem;
+  width: 14rem;
+  height: 5rem;
+  left: -1rem;
   right: auto;
-  bottom: -118px;
+  bottom: -80px;
   z-index: 2;
   top: auto;
 }
